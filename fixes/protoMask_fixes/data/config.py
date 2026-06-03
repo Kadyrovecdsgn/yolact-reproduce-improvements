@@ -767,6 +767,10 @@ yolact_resnet50_pascal_config = yolact_resnet50_config.copy({
     })
 })
 
+yolact_base_k8_config = yolact_base_config.copy({
+    'name': 'yolact_base_k16_config',
+    'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(8, 1, {})],
+})
 
 yolact_base_k16_config = yolact_base_config.copy({
     'name': 'yolact_base_k16_config',
@@ -776,6 +780,16 @@ yolact_base_k16_config = yolact_base_config.copy({
 yolact_base_k64_config = yolact_base_config.copy({
     'name': 'yolact_base_k64_config',
     'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(64, 1, {})],
+})
+
+yolact_base_k128_config = yolact_base_config.copy({
+    'name': 'yolact_base_k64_config',
+    'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(128, 1, {})],
+})
+
+yolact_base_k256_config = yolact_base_config.copy({
+    'name': 'yolact_base_k64_config',
+    'mask_proto_net': [(256, 3, {'padding': 1})] * 3 + [(None, -2, {}), (256, 3, {'padding': 1})] + [(256, 1, {})],
 })
 
 # ----------------------- YOLACT++ CONFIGS ----------------------- #
