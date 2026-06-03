@@ -70,9 +70,9 @@
 
 Для обучения моделей YOLACT нужно предварительно скачать предобученные веса моделей рода imagenet и переместить в ./weights.
 Это можно сделать как через команды, имеющийся в блокноте, либо по ссылкам внизу:
-Для Resnet101, скачиваем resnet101_reducedfc.pth [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/resnet101_reducedfc.pth?download=true).
-Для Resnet50, скачиваем resnet50-19c8e357.pth from [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/resnet50-19c8e357.pth?download=true).
-Для Darknet53, скачиваем darknet53.pth from [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/darknet53.pth?download=true).
+- Для Resnet101, скачиваем resnet101_reducedfc.pth [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/resnet101_reducedfc.pth?download=true).
+- Для Resnet50, скачиваем resnet50-19c8e357.pth from [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/resnet50-19c8e357.pth?download=true).
+- Для Darknet53, скачиваем darknet53.pth from [здесь](https://huggingface.co/dbolya/yolact-initial-weights/resolve/main/darknet53.pth?download=true).
 
 Шаги по воспроизведению экспериментов:
 - Для воспроизведения первых экспериментов рекомендуется заменить оригинальные компоненты на те, что находятся в ./fixes/main_fixes 
